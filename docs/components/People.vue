@@ -7,7 +7,7 @@
 <script setup lang="ts">
 </script>
 
-<style scoped>
+<style module>
 .people {
     color: skyblue;
 }
