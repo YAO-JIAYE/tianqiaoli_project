@@ -12,20 +12,22 @@ hero:
   actions:
     - theme: brand
       text: 行きましょう！
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+      link: /overview
 
 features:
-  - icon: 🛠️
-    title: 紹介
-    details: 天橋立...
-    link: 'api-examples'
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - icon: 🌊
+    title: 概要
+    details: 天につながる太古の聖地「天橋立」haishui
+    link: '/overview'
+  - icon: 📢
+    title: 活動内容
+    details: 
+    link: '/event'
+  - icon: 📑
+    title: 結果
+    details: データをまとめる　データ可視化
+    link: '/result'
+ 
 
 
 ---
