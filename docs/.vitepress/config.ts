@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/tianqiaoli_project/',
   title: "グループ５８のサイト",
   description: "A VitePress Site",
   themeConfig: {
