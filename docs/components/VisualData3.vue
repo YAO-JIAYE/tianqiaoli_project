@@ -12,11 +12,11 @@ ChartJS.register(ArcElement, Tooltip, Legend)
 
 
 const data = {
-    labels: ['40','80', '120'],
+    labels: ['25','75', '150'],
     datasets: [
         {
             backgroundColor: ['#41B883', '#E46651', '#00D8FF'],
-            data: [15,12, 3]
+            data: [17,10, 3]
         }
     ]
 }

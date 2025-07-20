@@ -1,30 +1,39 @@
 <template>
-    <div class="a">
-        <Bar
-        id="my-chart-id"
-        :options="chartOptions"
-        :data="chartData"
-        />
+    <div class="chart-container">
+        <Pie :data="data" :options="options" />
     </div>
-    
 </template>
-  
-<script setup>
-import { Bar } from 'vue-chartjs'
-import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from 'chart.js'
 
-ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
+<script setup lang="ts">
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'
+import { Pie } from 'vue-chartjs'
 
-let chartData = {
-    labels: [ 'January', 'February', 'March' ],
-    datasets: [ { data: [40, 20, 12] } ]
+ChartJS.register(ArcElement, Tooltip, Legend)
+
+
+const data = {
+    labels: ['6.5','6.8', '6.9', '7.0', '7.1'],
+    datasets: [
+        {
+            backgroundColor: ['#41B883', '#E46651', '#00D8FF', '#DD1B16', '#FF00FF'],
+            data: [2,10, 8, 5, 5]
+        }
+    ]
 }
 
-let chartOptions = {
-    responsive: true
+const options = {
+    responsive: true,
+    maintainAspectRatio: false,
+    aspectRatio: 1
 }
+
 </script>
 
-<style module>
-
+<style scoped>
+.chart-container {
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    margin: 0 auto;
+}
 </style>
